@@ -4,11 +4,7 @@
   <head>
     <title>{% block title %}Лев Толстой – зеркало русской революции.{% endblock %}</title>
   </head>
-  <body>
-    <header>    
-    </header>
-    <main>
-        {% block content %}
+{% block content %}
       <!-- класс py-5 создает отступы сверху и снизу блока -->
       <div class="container py-5">
         <h1>{{ text }}</h1>
@@ -79,9 +75,5 @@
         <!-- под последним постом нет линии -->
       </div>
       {% endblock %}
-    </main>
-    <footer class="page-footer font-small blue border-top"> 
-        {% include 'includes/footer.html' %}
-    </footer>
-  </body>
+{% include 'includes/footer.html' %}
 </html>
